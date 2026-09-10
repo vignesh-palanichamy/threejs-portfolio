@@ -1,32 +1,32 @@
-# Three.js Portfolio
+# Vignesh Palanichamy — Digital Workspace Portfolio
 
-An interactive portfolio application built with Three.js and Vite.
+Premium cinematic developer portfolio built with React, TypeScript, Three.js, React Three Fiber, GSAP ScrollTrigger, and Lenis.
 
-## Features
+## Highlights
 
-- Modular Three.js setup with dedicated scene, camera, renderer, controls, lighting, and effects modules
-- Animated 3D hero showcase with rotating geometric meshes
-- Orbit mouse interaction for the hero scene
-- Scroll-based smooth camera transitions between portfolio sections
-- Starfield particle background and layered lighting (ambient, directional, point)
-- Portfolio layout with Hero, About, Projects, and Contact sections
-- Responsive design and smooth section navigation
-- Vite development workflow with hot reload and source maps in production builds
+- Cinematic loading + terminal intro sequence
+- Continuous scroll-driven 3D camera journey across sections
+- Layered WebGL workspace scene with atmospheric lighting and procedural particles
+- Editorial section system: intro, about, experience, skills, project universe, education, achievements, contact outro
+- Interactive project case study overlay transitions
+- Adaptive quality strategy for lower-end devices and reduced-motion fallback
+- Desktop custom cursor interactions
+- SEO metadata, OpenGraph tags, and JSON-LD person schema
 
-## Tech Stack
+## Stack
 
-- [Three.js](https://threejs.org/)
-- [Vite](https://vite.dev/)
-- Vanilla JavaScript + CSS
+- React + TypeScript + Vite
+- Three.js + @react-three/fiber + @react-three/drei
+- GSAP + ScrollTrigger
+- Lenis
+- Framer Motion
 
-## Getting Started
+## Local Development
 
 ```bash
 npm install
 npm run dev
 ```
-
-Open the local URL shown in the terminal (usually `http://localhost:5173`).
 
 ## Build
 
@@ -39,15 +39,30 @@ npm run preview
 
 ```text
 src/
-  main.js
-  style.css
-  three/
-    camera.js
-    controls.js
-    lighting.js
-    portfolioScene.js
-    renderer.js
-    scene.js
-    shapes.js
-    stars.js
+  app/
+  components/
+    layout/
+    navigation/
+    ui/
+  experience/
+    canvas/
+    scenes/
+  sections/
+    hero/
+    about/
+    experience/
+    skills/
+    projects/
+    education/
+    contact/
+  data/
+  hooks/
+  lib/
+  styles/
 ```
+
+## Notes
+
+- Contact links are centralized in `src/data/portfolio.ts` for easy update.
+- Scene complexity scales down on lower-end devices.
+- For strict resume accuracy, only provided factual profile/work/education details are used.

@@ -3,68 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Interactive Three.js portfolio showcasing projects, skills, and contact details." />
-    <meta name="theme-color" content="#030712" />
-    <title>Three.js Portfolio</title>
+    <meta name="description" content="Vignesh Palanichamy — Full Stack × Creative Developer building scalable products and interactive Three.js web experiences." />
+    <meta name="theme-color" content="#06070b" />
+    <meta property="og:title" content="Vignesh Palanichamy — Digital Workspace" />
+    <meta property="og:description" content="Cinematic interactive developer portfolio by Vignesh Palanichamy." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://example.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <title>Vignesh Palanichamy — Digital Workspace</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Vignesh Palanichamy",
+        "jobTitle": "Full Stack Developer",
+        "knowsAbout": ["React.js", "Next.js", "Node.js", "MongoDB", "Three.js", "WebGL"],
+        "alumniOf": "Government College of Technology"
+      }
+    </script>
   </head>
   <body>
-    <canvas id="hero-canvas" aria-hidden="true"></canvas>
-
-    <header class="site-header">
-      <a class="brand" href="#hero">VP</a>
-      <nav aria-label="Primary">
-        <a href="#hero">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
-
-    <main>
-      <section id="hero" data-scene-step>
-        <p class="kicker">Creative Developer</p>
-        <h1>Building immersive web experiences with Three.js</h1>
-        <p>Interactive graphics, smooth animation systems, and performant frontend engineering.</p>
-      </section>
-
-      <section id="about" data-scene-step>
-        <h2>About</h2>
-        <p>I design and build high-quality digital products, blending storytelling and interaction in the browser.</p>
-        <ul class="skills">
-          <li>Three.js</li>
-          <li>WebGL</li>
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>Node.js</li>
-          <li>Performance Optimization</li>
-        </ul>
-      </section>
-
-      <section id="projects" data-scene-step>
-        <h2>Projects</h2>
-        <div class="project-grid">
-          <article class="project-card">
-            <h3>Realtime Product Configurator</h3>
-            <p>Customizable 3D product previews with live material switching and camera presets.</p>
-          </article>
-          <article class="project-card">
-            <h3>Data Nebula Dashboard</h3>
-            <p>Particle-driven data visualizations with custom shaders and animated transitions.</p>
-          </article>
-          <article class="project-card">
-            <h3>Interactive Campaign Microsite</h3>
-            <p>Scroll-triggered scenes and cinematic storytelling for a multi-device marketing launch.</p>
-          </article>
-        </div>
-      </section>
-
-      <section id="contact" data-scene-step>
-        <h2>Contact</h2>
-        <p>Let’s collaborate on your next interactive experience.</p>
-        <a class="contact-link" href="mailto:hello@example.com">hello@example.com</a>
-      </section>
-    </main>
-
-    <script type="module" src="/src/main.js"></script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
